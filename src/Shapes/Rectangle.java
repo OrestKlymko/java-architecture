@@ -33,4 +33,9 @@ public class Rectangle extends Shape implements Corners {
 	public int getCountCorners() {
 		return 4;
 	}
+	
+	@Override
+	public void getShapeName() {
+		System.out.println("Rectangle");
+	}
 }

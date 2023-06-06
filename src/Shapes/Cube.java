@@ -28,4 +28,9 @@ public class Cube extends Quad implements ThreeDimension {
 	public double getV() {
 		return Math.abs(getEndX() - getStartX()) * (getEndY() - getStartY()) * (getEndZ()-getStartZ());
 	}
+	
+	@Override
+	public void getShapeName() {
+		System.out.println("Cube");
+	}
 }

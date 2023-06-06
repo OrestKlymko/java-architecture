@@ -13,11 +13,15 @@ public class Main {
 		Cube cube = new Cube(1, 2, 3, 52, 5, 10, "red", "white");
 		cube.getBorderColor();//red;
 		cube.getV();//500;
+		cube.getShapeName();//Cube
 
 
 		Triangle triangle = new Triangle(1,2,3,5,"black",30);
 		triangle.getCountCorners();//3
 		triangle.getRadiusCorners();//30
+		triangle.getShapeName();//Triangle
+
+
 
 	}
 }

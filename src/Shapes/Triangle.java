@@ -31,4 +31,9 @@ public class Triangle extends Shape implements Corners {
 	public int getCountCorners() {
 		return 3;
 	}
+	
+	@Override
+	public void getShapeName() {
+		System.out.println("Triangle");
+	}
 }

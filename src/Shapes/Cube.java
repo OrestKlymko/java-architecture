@@ -34,8 +34,5 @@ public class Cube extends Quad implements ThreeDimension {
 		System.out.println("Cube");
 	}
 	
-	@Override
-	public void getShapeName() {
-		System.out.println("Quad");
-	}
+	
 }

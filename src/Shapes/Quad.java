@@ -21,4 +21,9 @@ public class Quad extends Shape {
 	public String getBackgroundColor() {
 		return backgroundColor;
 	}
+	
+	@Override
+	public void getShapeName() {
+		System.out.println("Quad");
+	}
 }

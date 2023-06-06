@@ -31,5 +31,10 @@ public class Circle extends Shape implements Radius {
 	public double radius() {
 		return radius;
 	}
+	
+	@Override
+	public void getShapeName() {
+		System.out.println("Circle");
+	}
 
 }

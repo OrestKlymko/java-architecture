@@ -9,7 +9,7 @@ public class Main {
 		Shape circle = new Circle(1,2,3,4,"Circle",5,"black","white");
 
 		Printer printer = new Printer();
-		printer.PrintInfo(circle);
+		printer.printInfo(circle);
 
 
 //		Cube cube = new Cube(1, 2, 3, 52, "Cube",5, 10, "red", "white");

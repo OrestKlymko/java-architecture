@@ -6,8 +6,8 @@ import interfaces.shapeInterfaces.Corners;
 public class Triangle extends Shape implements Corners {
 	private String backgroundColor;
 	private int radiusCorners;
-	public Triangle(double startX, double startY, double endX, double endY,String backgroundColor,int radiusCorners) {
-		super(startX, startY, endX, endY);
+	public Triangle(double startX, double startY, double endX, double endY,String nameOfShape,String backgroundColor,int radiusCorners) {
+		super(startX, startY, endX, endY,nameOfShape);
 		this.backgroundColor=backgroundColor;
 		this.radiusCorners=radiusCorners;
 	}
@@ -31,9 +31,5 @@ public class Triangle extends Shape implements Corners {
 	public int getCountCorners() {
 		return 3;
 	}
-	
-	@Override
-	public void getShapeName() {
-		System.out.println("Triangle");
-	}
+
 }

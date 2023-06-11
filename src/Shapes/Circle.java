@@ -9,8 +9,8 @@ public class Circle extends Shape implements Radius {
 	private String color;
 	private String backgroundColor;
 
-	public Circle(double startX, double startY, double endX, double endY,double radius,String color, String backgroundColor) {
-		super(startX, startY, endX, endY);
+	public Circle(double startX, double startY, double endX, double endY,String nameOfShape,double radius,String color, String backgroundColor) {
+		super(startX, startY, endX, endY, nameOfShape);
 
 		this.radius=radius;
 		this.color = color;
@@ -30,11 +30,6 @@ public class Circle extends Shape implements Radius {
 	@Override
 	public double radius() {
 		return radius;
-	}
-	
-	@Override
-	public void getShapeName() {
-		System.out.println("Circle");
 	}
 
 }

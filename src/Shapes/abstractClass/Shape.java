@@ -9,12 +9,14 @@ public abstract class Shape implements Zoom, Draw, BackgroundColor {
 	private double startY;
 	private double endX;
 	private double endY;
+	private String  nameOfShape;
 
-	public Shape(double startX, double startY, double endX, double endY) {
+	public Shape(double startX, double startY, double endX, double endY, String nameOfShape) {
 		this.startX = startX;
 		this.startY = startY;
 		this.endX = endX;
 		this.endY = endY;
+		this.nameOfShape=nameOfShape;
 	}
 
 	@Override
@@ -48,4 +50,7 @@ public abstract class Shape implements Zoom, Draw, BackgroundColor {
 		return endY;
 	}
 
+	public String getNameOfShape() {
+		return nameOfShape;
+	}
 }

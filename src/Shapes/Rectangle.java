@@ -7,8 +7,8 @@ public class Rectangle extends Shape implements Corners {
 
 	private int radiusCorners;
 
-	public Rectangle(double startX, double startY, double endX, double endY,int radiusCorners) {
-		super(startX, startY, endX, endY);
+	public Rectangle(double startX, double startY, double endX, double endY,String nameOfShape,int radiusCorners) {
+		super(startX, startY, endX, endY,nameOfShape);
 		if(radiusCorners>0&&radiusCorners<90){
 			this.radiusCorners=radiusCorners;
 		}
@@ -33,9 +33,5 @@ public class Rectangle extends Shape implements Corners {
 	public int getCountCorners() {
 		return 4;
 	}
-	
-	@Override
-	public void getShapeName() {
-		System.out.println("Rectangle");
-	}
+
 }

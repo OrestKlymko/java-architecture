@@ -8,8 +8,8 @@ public class Cube extends Quad implements ThreeDimension {
 	private double endZ;
 
 
-	public Cube(double startX, double startY, double endX, double endY,double startZ, double endZ,String color, String backgroundColor) {
-		super(startX, startY, endX, endY, color, backgroundColor);
+	public Cube(double startX, double startY, double endX, double endY,String nameOfShape,double startZ, double endZ,String color, String backgroundColor) {
+		super(startX, startY, endX, endY, color, backgroundColor, nameOfShape);
 		this.startZ=startZ;
 		this.endZ=endZ;
 	}
@@ -28,11 +28,7 @@ public class Cube extends Quad implements ThreeDimension {
 	public double getV() {
 		return Math.abs(getEndX() - getStartX()) * (getEndY() - getStartY()) * (getEndZ()-getStartZ());
 	}
-	
-	@Override
-	public void getShapeName() {
-		System.out.println("Cube");
-	}
+
 	
 	
 }
